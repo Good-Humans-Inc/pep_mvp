@@ -1,0 +1,169 @@
+Log
+蓝牙耳机状态变化: 已连接
+蓝牙耳机状态变化: 已连接
+📱 ExerciseDetailView appeared
+🔄 First appearance - forcing resource reset
+♻️ Force resetting all resources
+No active ElevenLabs session to end
+📷 Force resetting camera session
+📷 Camera authorization: already authorized
+📷 Camera session reset complete
+🛑 ResourceCoordinator.stopExerciseSession called
+📷 Force resetting camera session
+📷 Camera authorization: already authorized
+📷 Camera session reset complete
+Stopping speech recognition...
+Speech recognition stopped
+✅ Audio session deactivated in stopExerciseSession
+✅ Audio session reset complete
+GPU process (0x123000cd0) took 1.312497 seconds to launch
+WebContent process (0x1210180c0) took 1.364789 seconds to launch
+Could not create a sandbox extension for '/var/containers/Bundle/Application/D3B51DD7-A1A8-4B41-B42F-546CABD898C2/KneeRecoveryApp.app'
+🔍 EXERCISE START INITIATED BY ["0   KneeRecoveryApp.debug.dylib         0x0000000105f72a20 $s15KneeRecoveryApp18ExerciseDetailViewV05startD033_F50575866E26E9FE6A4302E58E61EBE8LLyyF + 896", "1   KneeRecoveryApp.debug.dylib         0x0000000105f72690 $s15KneeRecoveryApp18ExerciseDetailViewV015exerciseDetailsF033_F50575866E26E9FE6A4302E58E61EBE8LLQrvg7SwiftUI05TupleF0VyAF19_ConditionalContentVyAJyAF0F0PAFE5frame5width6height9alignmentQr12CoreGraphics7CGFloatVSg_AtF9AlignmentVtFQOyAA017CustomVideoPlayerF0V_Qo_AlFE12cornerRadius_11antialiasedQrAS_SbtFQOyAlFE10background_20ignoresSafeAreaEdgesQrqd___AF4EdgeO3SetVtAF10ShapeStyleRd__lFQOyAlFEAmnoPQrAT_AtVtFQOyAA013YoutubePlayerF0V_Qo__AF5ColorVQo__Qo_GAJyAylFEAZ_A_QrAS_SbtFQOyAF10AsyncImageVyAJyAJyAlFE7overlay_APQrqd___AVtAfKRd__lFQOyAlFE11aspectRatio_11contentModeQrAT_AF0U4ModeOtFQOyAF06_ShapeF0VyAF9RectangleVA11_G_Qo__AF08ProgressF0VyAF05EmptyF0VA31_GQo_AlFEA18__A19_QrAT_A21_tFQOyAF5ImageV_Qo_GAJyAlFEA17__APQrqd___AVtAfKRd__lFQOyA27__AlFE4fontyQrAF4FontVSgFQOyA35__Qo_Qo_A31_GGG_Qo_SgGG_AF06ScrollF0VyAlFE7paddingyQrA5__ATtFQOyAF6VStackVyAHyAF4TextV_A57_AC0G19ModificationSectionAELLQrvpQOy_Qo_AC19targetJointsSectionAELLQrvpQOy_Qo_AC19instructionsSectionAELLQrvpQOy_Qo_AlFE8disabledyQrSbFQOyAlFEA53_yQrA5__ATtFQOyAF6ButtonVyAlFEAZ_A_QrAS_SbtFQOyAlFEA0__A1_Qrqd___A5_tAFA6_Rd__lFQOyAlFEA53_yQrA5__ATtFQOyAlFEAM8minWidth10idealWidth8maxWidth9minHeight11idealHeight9maxHeightAPQrAT_A5tVtFQOyA57__Qo__Qo__A11_Qo__Qo_G_Qo__Qo_tGG_Qo_GtGyXEfU_A82_yXEfU0_A80_yXEfU_yyScMYccfU_ + 52", "2   SwiftUI                             0x000000019f013c54 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 10300500", "3   SwiftUI                             0x000000019ef206d0 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 9303760", "4   SwiftUI                             0x000000019f5ed7c4 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 16435140", "5   SwiftUI                             0x000000019f5ba1a8 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 16224680", "6   SwiftUI                             0x000000019ea9cc2c 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 4570156", "7   SwiftUI                             0x000000019efc93b4 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 9995188", "8   SwiftUI                             0x000000019efca7d8 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 10000344", "9   SwiftUI                             0x000000019f54fed8 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 15789784", "10  SwiftUI                             0x000000019ef206d0 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 9303760", "11  SwiftUI                             0x000000019f5ed7c4 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 16435140", "12  SwiftUI                             0x000000019f54c9e4 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 15776228", "13  SwiftUI                             0x000000019f550728 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 15791912", "14  SwiftUICore                         0x000000025cc375e0 232C42B5-8DF5-344E-B23C-B9E8542003E0 + 521696", "15  SwiftUICore                         0x000000025cc5ce94 232C42B5-8DF5-344E-B23C-B9E8542003E0 + 675476", "16  SwiftUI                             0x000000019e6dd76c 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 640876", "17  SwiftUI                             0x000000019eec1740 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 8914752", "18  SwiftUICore                         0x000000025cc375b8 232C42B5-8DF5-344E-B23C-B9E8542003E0 + 521656", "19  SwiftUICore                         0x000000025cc373c4 $s7SwiftUI6UpdateO15dispatchActionsyyFZ + 1256", "20  SwiftUICore                         0x000000025cc36830 $s7SwiftUI6UpdateO3endyyFZ + 212", "21  SwiftUI                             0x000000019f1dfdcc 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 12185036", "22  SwiftUI                             0x000000019f1dfe30 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 12185136", "23  UIKitCore                           0x000000019cb3b650 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 4273744", "24  UIKitCore                           0x000000019cb3b4c0 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 4273344", "25  UIKitCore                           0x000000019cb3b280 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 4272768", "26  UIKitCore                           0x000000019c7ec5f8 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 804344", "27  UIKitCore                           0x000000019c7a9a78 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 531064", "28  UIKitCore                           0x000000019c939150 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 2167120", "29  UIKitCore                           0x000000019c9fe67c 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 2975356", "30  UIKitCore                           0x000000019c9fd138 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 2969912", "31  UIKitCore                           0x000000019c9fc08c 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 2965644", "32  UIKitCore                           0x000000019c9eb4d0 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 2897104", "33  UIKitCore                           0x000000019c8edf8c 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 1859468", "34  UIKitCore                           0x000000019c7c68a4 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 649380", "35  UIKitCore                           0x000000019c7c4710 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 640784", "36  UIKitCore                           0x000000019c7c7040 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 651328", "37  UIKitCore                           0x000000019c7c4c5c 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 642140", "38  CoreFoundation                      0x0000000199f78f4c 0013A8B1-2524-3534-B5BA-681AAF18C798 + 474956", "39  CoreFoundation                      0x0000000199f78ee0 0013A8B1-2524-3534-B5BA-681AAF18C798 + 474848", "40  CoreFoundation                      0x0000000199f7bb40 0013A8B1-2524-3534-B5BA-681AAF18C798 + 486208", "41  CoreFoundation                      0x0000000199f7ad3c 0013A8B1-2524-3534-B5BA-681AAF18C798 + 482620", "42  CoreFoundation                      0x0000000199fcd284 CFRunLoopRunSpecific + 588", "43  GraphicsServices                    0x00000001e72394c0 GSEventRunModal + 164", "44  UIKitCore                           0x000000019cb16674 8CC54497-F7EC-3903-AE5A-A274047C0CF1 + 4122228", "45  UIKitCore                           0x000000019c73ce88 UIApplicationMain + 340", "46  SwiftUI                             0x000000019e8d2ef8 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 2694904", "47  SwiftUI                             0x000000019e8d2e28 8BE3C730-70B1-39E6-82BF-5E7644CE8951 + 2694696", "48  SwiftUI                             0x000000019e8d2d0c $s7SwiftUI3AppPAAE4mainyyFZ + 180", "49  KneeRecoveryApp.debug.dylib         0x0000000105fb61b8 $s15KneeRecoveryAppAAV5$mainyyFZ + 40", "50  KneeRecoveryApp.debug.dylib         0x0000000105fb62b8 __debug_main_executable_dylib_entry_point + 12", "51  dyld                                0x00000001c0225de8 A770FF8C-8FB9-3E03-85FE-7F26DB36812B + 196072"]
+🚀 Starting exercise: Straight Leg Raises
+AUDIO ROUTE INFORMATION:
+- Inputs:
+- Outputs:
+  • yanffyy🛫 (Type: BluetoothA2DPOutput)
+No active ElevenLabs session to end
+🔄 Previous session ended, starting exercise session
+🚀 ResourceCoordinator.startExerciseSession called
+🔍 Checking all permissions
+📷 Camera permission status: 3
+🎤 Microphone permission granted: true
+🗣️ Speech recognition permission status: 3
+🔐 All permissions granted: true
+🔈 ResourceCoordinator configuring master audio session
+✅ Master audio session configured
+✅ Resource coordinator session started
+📷 Camera session start attempt #1
+📷 Setting up camera session...
+📷 Setting up camera session...
+📷 Using front camera
+📷 Added video device input to session
+📷 Set video orientation to portrait
+📷 Enabled video mirroring
+📷 Added video output to session
+📷 Camera session setup completed successfully
+📷 Camera start requested - waiting for confirmation...
+📷 Starting camera session...
+📷 Camera session running status: true
+📱 Received camera session started notification
+✅ Camera is running, continuing exercise setup...
+📷 Camera frame dropped
+📷 Vision processing started
+🔍 startExerciseCoachAgent called
+🔒 Marked Exercise Coach session as requested
+⭐️ Starting ElevenLabs session with agent type: Exercise Coach (ID: GEXRBIHrq3oa2fB0TO1v)
+✅ Successfully deactivated previous audio session
+✅ Audio session configured for ElevenLabs
+⭐️ Registered exercise coach client tools: logExerciseProgress, provideExerciseFeedback, logMessage
+🚀 Attempting to start ElevenLabs Exercise Coach session...
+🟢 ElevenLabs connected with Exercise Coach - conversation ID: fMcck7b2ty3ucXigFaap
+🔄 ElevenLabs Exercise Coach mode changed to: speaking
+📝 ElevenLabs Exercise Coach message (ai): Welcome to a new day of better self!
+✅ ElevenLabs Exercise Coach session started successfully
+⏰ Camera startup timeout occurred
+❌ Camera failed to start during exercise setup
+Ending ElevenLabs Exercise Coach session
+🛑 ResourceCoordinator.stopExerciseSession called
+📷 Force resetting camera session
+📷 Camera authorization: already authorized
+📷 Camera session reset complete
+Stopping speech recognition...
+Interrupting ElevenLabs speech
+Speech recognition stopped
+WebSocket error: The operation couldn’t be completed. Socket is not connected
+⚠️ ElevenLabs Exercise Coach error: WebSocket error
+⚠️ Error details: Optional(Error Domain=NSPOSIXErrorDomain Code=57 "Socket is not connected" UserInfo={NSErrorFailingURLStringKey=https://api.elevenlabs.io/v1/convai/conversation?agent_id=GEXRBIHrq3oa2fB0TO1v, NSErrorFailingURLKey=https://api.elevenlabs.io/v1/convai/conversation?agent_id=GEXRBIHrq3oa2fB0TO1v})
+🔄 Attempting to reconnect Exercise Coach in 1.0 seconds (attempt 1)
+✅ ElevenLabs conversation ended successfully
+❌ Error deactivating audio session: Session deactivation failed
+🎤 Exercise coach agent started
+⚠️ Cannot start session during cleanup
+🏁 Exercise fully started and UI updated
+Audio session deactivated successfully
+ElevenLabs Exercise Coach session ended
+Failed to terminate process: Error Domain=com.apple.extensionKit.errorDomain Code=18 "(null)" UserInfo={NSUnderlyingError=0x3030fce70 {Error Domain=RBSRequestErrorDomain Code=3 "No such process found" UserInfo={NSLocalizedFailureReason=No such process found}}}
+Failed to terminate process: Error Domain=com.apple.extensionKit.errorDomain Code=18 "(null)" UserInfo={NSUnderlyingError=0x30317ad60 {Error Domain=RBSRequestErrorDomain Code=3 "No such process found" UserInfo={NSLocalizedFailureReason=No such process found}}}
+📶 Network status changed: Connected
+📶 Interface: ["en0", "pdp_ip0"]
+📶 Is expensive: false
+📶 Network status changed: Connected
+📶 Interface: ["en0", "pdp_ip0"]
+📶 Is expensive: false
+📶 Network status changed: Connected
+📶 Interface: ["en0", "pdp_ip0"]
+📶 Is expensive: false
+📶 Network status changed: Connected
+📶 Interface: ["en0", "pdp_ip0"]
+📶 Is expensive: false
+exercisesJson
+[["instructions": <__NSArrayI 0x303176e80>(
+Lie on your back with one leg bent and the other straight.,
+Tighten the muscles in your straight leg and raise it to the height of the bent knee.,
+Hold for a few seconds, then lower the leg back down and repeat with the other leg.
+)
+, "id": ad70b7da-b79c-4a97-a7b3-538215c3ad05, "source": llm-generated, "name": Straight Leg Raises, "video_thumbnail": https://i.ytimg.com/vi/xhbpQ80JiUQ/sddefault.jpg, "description": This exercise strengthens the quadriceps and hip flexor muscles without putting weight on the knee., "is_template": 0, "created_at": 2025-04-02T00:46:45.342575+00:00, "video_url": https://www.youtube.com/watch?v=U4L_6JEv9Jg, "patient_exercise_id": 3c8f842a-9cd7-41c9-b1c0-55f0baee4fe5, "target_joints": <__NSArrayI 0x303f37d20>(
+knee,
+hip
+)
+], ["patient_exercise_id": ed30d740-af4a-42a0-96ac-19226c99adbc, "source": llm-generated, "description": This exercise helps to strengthen your quadriceps, the muscles at the front of your thighs., "instructions": <__NSArrayI 0x302ab2440>(
+Lie down on your back on a flat surface.,
+Bend one knee and keep your other leg straight.,
+Tighten the muscles in your straight leg by pushing your knee down into the floor.,
+Hold for 5 seconds and then relax.,
+Repeat 10 times and then switch to the other leg.
+)
+, "id": b7bb9cc5-ca12-4124-909f-3914b6feef8f, "video_thumbnail": https://i.ytimg.com/vi/5TUK4uT2nnw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLByaWrDXefriNZ7woH3qrHjnKE9hA, "is_template": 0, "video_url": https://www.youtube.com/watch?v=5TUK4uT2nnw, "name": Quad Sets, "target_joints": <__NSSingleObjectArrayI 0x303dff7b0>(
+knee
+)
+, "created_at": 2025-04-02T00:59:06.973721+00:00], ["video_thumbnail": https://www.verywellfit.com/thmb/kcAWo13C88RdfDyNdrTWtl6S8ug=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HamstringcurlBenGoldsteinVerywell-813dd3783ed649b6934f96f8d954d843.jpg, "patient_exercise_id": 36069715-9800-46f1-817a-8ac5ef19d1a7, "id": 9eb75c31-1413-483e-a8e0-24cff9595b47, "source": llm-generated, "name": Hamstring Curls, "target_joints": <__NSSingleObjectArrayI 0x303dfd270>(
+knee
+)
+, "created_at": 2025-04-02T00:46:45.479704+00:00, "is_template": 0, "instructions": <__NSArrayI 0x30316e1c0>(
+Stand and hold onto a chair for balance.,
+Bend one knee, bringing your heel towards your buttocks.,
+Hold for a few seconds, then lower your foot back down and repeat with the other leg.
+)
+, "description": This exercise strengthens the hamstring muscles, which support and stabilize the knee joint., "video_url": https://www.youtube.com/watch?v=LaDKpYN9FDw], ["source": llm-generated, "name": Step-ups, "video_thumbnail": https://i.ytimg.com/vi/WCFCdxzFBa4/sddefault.jpg, "is_template": 0, "id": 42b89741-2d9a-477c-b09d-9b699c966905, "description": This exercise strengthens your leg muscles and can help improve your balance., "target_joints": <__NSArrayI 0x3031d0e10>(
+knee,
+hip,
+ankle
+)
+, "patient_exercise_id": b6ef0711-f8ed-4734-a2fe-6650cad781a0, "created_at": 2025-04-02T00:59:06.180494+00:00, "instructions": <__NSArrayI 0x3031cb600>(
+Stand in front of a step or a sturdy platform.,
+Step up with one foot, then bring the other foot up so you are standing on the step.,
+Step down with the same foot, then bring the other foot down.,
+Repeat 10-15 times, then switch leading legs.
+)
+, "video_url": https://www.youtube.com/watch?v=WCFCdxzFBa4], ["description": This exercise strengthens the quadriceps, hamstrings, and glutes, which all support the knee., "name": Wall Squats, "patient_exercise_id": 90fdf097-0db9-4703-bc68-c661a865b29d, "is_template": 0, "video_thumbnail": https://i.ytimg.com/vi/etpqdV09Bdo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmHu7w5VlPbVKeWW3ckn_WQQMKdw, "instructions": <__NSArrayI 0x30310b3c0>(
+Stand with your back against a wall, feet shoulder-width apart.,
+Slowly bend your knees, sliding your back down the wall for a count of five.,
+Hold for 5 seconds, then slowly slide back up the wall.
+)
+, "video_url": https://www.youtube.com/watch?v=t6KeIiQAOkA, "id": 478dc298-6547-41cd-98ae-39a984b4e769, "source": llm-generated, "created_at": 2025-04-02T00:46:45.571955+00:00, "target_joints": <__NSArrayI 0x3031c9770>(
+knee,
+hip,
+ankle
+)
+]]
+https://img.youtube.com/vi/U4L_6JEv9Jg/hqdefault.jpg
+https://img.youtube.com/vi/5TUK4uT2nnw/hqdefault.jpg
+https://img.youtube.com/vi/LaDKpYN9FDw/hqdefault.jpg
+https://img.youtube.com/vi/WCFCdxzFBa4/hqdefault.jpg
+https://img.youtube.com/vi/t6KeIiQAOkA/hqdefault.jpg
+🔍 ResourceCoordinator.checkInitialPermissions called
+🔍 Checking all permissions
+📷 Camera permission status: 3
+🎤 Microphone permission granted: true
+🗣️ Speech recognition permission status: 3
+🔐 All permissions granted: true
+📴 ExerciseDetailView disappearing - Active: true, Starting: false, Transitioning: false
+🧹 Cleaning up exercise resources
+No active ElevenLabs session to end
+📷 Force resetting camera session
+📷 Camera authorization: already authorized
+📷 Camera session reset complete
+Stopping speech recognition...
+Speech recognition stopped

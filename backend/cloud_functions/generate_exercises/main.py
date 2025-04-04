@@ -8,6 +8,8 @@ import logging
 from google.cloud import firestore
 from google.cloud import secretmanager
 from datetime import datetime
+from flask import jsonify
+import sqlite3
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, 
@@ -57,6 +59,68 @@ def get_api_keys():
         raise ValueError("Missing required Google API keys. Please check Secret Manager.")
     
     return keys
+
+@functions_framework.http
+def generate_exercise(request):
+    """HTTP Cloud Function to generate an exercise for a patient.
+    Args:
+        request (flask.Request): The request object.
+    Returns:
+        The response text, or any set of values that can be turned into a
+        Response object using `make_response`.
+    """
+    if request.method != 'POST':
+        return jsonify({'error': 'Method not allowed'}), 405
+
+    request_json = request.get_json()
+    
+    if not request_json or 'user_id' not in request_json:
+        return jsonify({'error': 'Missing user_id'}), 400
+
+    user_id = request_json['user_id']
+    
+    # Get patient's pain points from database
+    conn = sqlite3.connect('patients_database.sqlite')
+    cursor = conn.cursor()
+    
+    cursor.execute('''
+    SELECT description FROM pain_points 
+    WHERE patient_id = ? 
+    ORDER BY created_at DESC 
+    LIMIT 1
+    ''', (user_id,))
+    
+    result = cursor.fetchone()
+    if not result:
+        return jsonify({'error': 'Patient not found'}), 404
+        
+    pain_point = result[0]
+    
+    # For MVP, return a predefined exercise based on pain point
+    # In production, this would use ML to select appropriate exercise
+    exercise = {
+        'id': str(uuid.uuid4()),
+        'name': 'Knee Flexion',
+        'description': 'Improve flexibility and range of motion in your knee',
+        'target_areas': 'knee,ankle',
+        'reps': 10,
+        'video_url': 'https://storage.googleapis.com/knee-recovery-app-storage/exercises/knee_flexion.mp4'
+    }
+    
+    # Store exercise recommendation
+    now = datetime.datetime.now().isoformat()
+    cursor.execute('''
+    INSERT INTO patient_exercises (id, patient_id, exercise_id, recommended_at)
+    VALUES (?, ?, ?, ?)
+    ''', (str(uuid.uuid4()), user_id, exercise['id'], now))
+    
+    conn.commit()
+    conn.close()
+    
+    return jsonify({
+        'exercise': exercise,
+        'status': 'success'
+    })
 
 @functions_framework.http
 def generate_exercises(request):

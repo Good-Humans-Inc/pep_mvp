@@ -6,6 +6,8 @@ import logging
 from google.cloud import firestore
 from datetime import datetime
 import re
+from flask import jsonify
+import sqlite3
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -41,51 +43,53 @@ VALID_FREQUENCIES = [
 
 @functions_framework.http
 def onboard_patient(request):
+    """HTTP Cloud Function to onboard a new patient.
+    Args:
+        request (flask.Request): The request object.
+    Returns:
+        The response text, or any set of values that can be turned into a
+        Response object using `make_response`.
     """
-    Cloud Function to handle patient onboarding with structured JSON only.
-    
-    Required fields:
-    - name (str): Patient's name
-    - age (int): Patient's age (5-100)
-    - injury (str): Description of the injury or pain
-    - pain_level (int): Pain severity (1-10)
-    - frequency (str): Exercise frequency (see VALID_FREQUENCIES)
-    - time_of_day (str): Preferred exercise time (HH:MM in 24hr format)
-    - notification_time (str): Notification time (HH:MM in 24hr format)
-    - goal (str): Patient's recovery goal
-    
-    Optional fields:
-    - fcm_token (str): Firebase Cloud Messaging token for notifications
-    """
-    # Enable CORS
-    if request.method == 'OPTIONS':
-        headers = {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'POST',
-            'Access-Control-Allow-Headers': 'Content-Type',
-            'Access-Control-Max-Age': '3600'
-        }
-        return ('', 204, headers)
-    
-    headers = {'Access-Control-Allow-Origin': '*'}
-    
-    try:
-        request_json = request.get_json(silent=True)
-        
-        if not request_json:
-            logger.error("Invalid request - missing JSON data")
-            return (json.dumps({'error': 'Invalid request - missing data'}, cls=DateTimeEncoder), 400, headers)
-        
-        # Log incoming request for debugging
-        logger.info(f"Received request: {json.dumps(request_json)}")
-        
-        # Process structured JSON only
-        return process_structured_onboarding(request_json, headers)
-            
-    except Exception as e:
-        logger.error(f"Error processing request: {str(e)}")
-        return (json.dumps({'error': f'Error processing request: {str(e)}'}, cls=DateTimeEncoder), 500, headers)
+    if request.method != 'POST':
+        return jsonify({'error': 'Method not allowed'}), 405
 
+    request_json = request.get_json()
+    
+    if not request_json or 'name' not in request_json or 'pain_point' not in request_json:
+        return jsonify({'error': 'Missing required fields'}), 400
+
+    name = request_json['name']
+    pain_point = request_json['pain_point']
+    
+    # Generate unique user ID
+    user_id = str(uuid.uuid4())
+    
+    # Store in database
+    conn = sqlite3.connect('patients_database.sqlite')
+    cursor = conn.cursor()
+    
+    now = datetime.datetime.now().isoformat()
+    
+    # Insert patient
+    cursor.execute('''
+    INSERT INTO patients (id, name, created_at, updated_at)
+    VALUES (?, ?, ?, ?)
+    ''', (user_id, name, now, now))
+    
+    # Insert pain point
+    pain_point_id = str(uuid.uuid4())
+    cursor.execute('''
+    INSERT INTO pain_points (id, patient_id, description, severity, created_at)
+    VALUES (?, ?, ?, ?, ?)
+    ''', (pain_point_id, user_id, pain_point, 5, now))
+    
+    conn.commit()
+    conn.close()
+    
+    return jsonify({
+        'user_id': user_id,
+        'status': 'success'
+    })
 
 def process_structured_onboarding(request_data, headers):
     """
